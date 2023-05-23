@@ -9,22 +9,22 @@ namespace WebCRUD.Models
         [Key]
         public int EmployeeId { get; set; }
         [Column(TypeName = "nvarchar(250)")]
-        [Required(ErrorMessage ="Este campo é de preenchimento obrigatório")]
         [DisplayName("Nome")]
+        [Required(ErrorMessage = "Este campo é de preenchimento obrigatório")]
 
         public string FullName { get; set; }
         [Column(TypeName = "varchar(50)")]
         [DisplayName("Matricula")]
 
-        public int EmpCode { get; set; }
+        public string EmpCode { get; set; }
         [Column(TypeName = "varchar(100)")]
         [DisplayName("Cargo")]
 
-        public int Postions { get; set; }
+        public string Postions { get; set; }
         [Column(TypeName = "varchar(100)")]
         [DisplayName("Localização")]
 
-        public int OfficeLocation { get; set; }
+        public string OfficeLocation { get; set; }
 
     }
 }
